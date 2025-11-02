@@ -1,0 +1,104 @@
+body{
+    font-family: "Sora";
+    font-size: 20px;
+    padding: 20px;
+}
+.container{
+    width: 100%;
+}
+
+.star-container{
+    background-color: #f7c03e;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.star{
+    height: 40px;
+    margin-top: 5px;
+}
+.container h1{
+    font-size: 36px;
+}
+
+.description{
+    color: #52525A;
+}
+
+.checklist{
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #52525A;
+}
+
+
+.checklist1, .checklist2, .checklist3{
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.checklist1 p, .checklist2 p, .checklist3 p{
+    margin-left: 10px;
+}
+
+.google-review, .meta-review{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.google-review p, .meta-review p{
+    color: #52525A;
+}
+
+.company-rating{
+    display: flex;
+    align-items: center;
+}
+
+.google-logo, .meta-logo{
+    margin-right: 10px;
+}
+
+/*desktop*/
+
+@media(min-width: 900px){
+    .container{
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .star-container{
+        margin-top: 70px;
+    }
+
+    .info{
+        grid-column: 1  / 2;
+        grid-row: 2 / 3;
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
+    .checklist{
+        grid-column: 1 / 3;
+    }
+
+    .google-review{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .meta-review{
+        grid-column: 3 / 4;
+        margin-left: -50px;
+        width: 350px;
+    }
+}
